@@ -8,15 +8,15 @@ html{
     font-size: 62.5%;
 }
 body{
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url("../img/background.jpg") repeat;
+    height: 100vh;
 }
 .heladera{
-    width: 90%;
-    height: 90%;
+    height: 100%;
+    aspect-ratio: 16/9;
     background-color:rgb(196,196,196);
     border: 0.8rem solid rgb(190, 87, 205);
     display: grid;
