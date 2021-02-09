@@ -26,7 +26,7 @@ h4{
 .heladera{
     width: 90%;
     height: 90%;
-    background-color:rgb(196,196,196);
+    background-color:rgb(217,217,217);
     border: 0.8rem solid rgb(190, 87, 205);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -39,7 +39,7 @@ h4{
     "estante7 estante7 estante7 estante7 estante7 estante7";
 }
 .estanteria1,.estanteria2,.estanteria3,.estanteria4,.estanteria5,.estanteria6,.estanteria7{
-    border: 0.4rem solid rgb(210,210,210);
+    background-color:rgb(204,204,204);
 }
 .estanteria1{
     grid-area: estante1;
@@ -49,7 +49,7 @@ h4{
 .estanteria2{
     grid-area: estante2;
 }
-.estante2 h3{
+.estanteria2 h3{
     text-align: end;
 }
 .estanteria3{
