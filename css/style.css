@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
 }
 html{
     font-size: 62.5%;
@@ -14,16 +13,71 @@ body{
     background: url("../img/background.jpg") repeat;
     height: 100vh;
 }
+h3{
+    font-size: 2.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+h4{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
 .heladera{
-    height: 100%;
-    aspect-ratio: 16/9;
+    width: 90%;
+    height: 90%;
     background-color:rgb(196,196,196);
     border: 0.8rem solid rgb(190, 87, 205);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 2fr 3fr 0.5fr 4fr;
     gap: 0.4rem;
+    grid-template-areas: 
+    "estante1 estante1 estante1 estante2 estante2 estante2"
+    "estante3 estante3 estante4 estante4 estante5 estante5"
+    "estante6 estante6 estante6 estante6 estante6 estante6"
+    "estante7 estante7 estante7 estante7 estante7 estante7";
 }
-div{
-    border: 0.4rem solid red;
+.estante1,.estante2,.estante3,.estante4,.estante5,.estante6,.estante7{
+    border: 0.4rem solid rgb(210,210,210);
+}
+.estante1{
+    grid-area: estante1;
+    display: flex;
+    align-items: flex-end;
+}
+.estante2{
+    grid-area: estante2;
+}
+.estante2 h3{
+    text-align: end;
+}
+.estante3{
+    grid-area: estante3;
+    display: flex;
+    justify-content: space-between;
+}
+.estante4{
+    grid-area: estante4;
+}
+.estante5{
+    grid-area: estante5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.estante6{
+    grid-area: estante6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estante6 h4{
+    text-align: center;
+}
+.estante7{
+    grid-area: estante7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
