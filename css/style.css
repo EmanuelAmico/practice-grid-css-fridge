@@ -38,44 +38,44 @@ h4{
     "estante6 estante6 estante6 estante6 estante6 estante6"
     "estante7 estante7 estante7 estante7 estante7 estante7";
 }
-.estante1,.estante2,.estante3,.estante4,.estante5,.estante6,.estante7{
+.estanteria1,.estanteria2,.estanteria3,.estanteria4,.estanteria5,.estanteria6,.estanteria7{
     border: 0.4rem solid rgb(210,210,210);
 }
-.estante1{
+.estanteria1{
     grid-area: estante1;
     display: flex;
     align-items: flex-end;
 }
-.estante2{
+.estanteria2{
     grid-area: estante2;
 }
 .estante2 h3{
     text-align: end;
 }
-.estante3{
+.estanteria3{
     grid-area: estante3;
     display: flex;
     justify-content: space-between;
 }
-.estante4{
+.estanteria4{
     grid-area: estante4;
 }
-.estante5{
+.estanteria5{
     grid-area: estante5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.estante6{
+.estanteria6{
     grid-area: estante6;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.estante6 h4{
+.estanteria6 h4{
     text-align: center;
 }
-.estante7{
+.estanteria7{
     grid-area: estante7;
     display: flex;
     justify-content: center;
