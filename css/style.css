@@ -87,12 +87,12 @@ h4{
         grid-template-rows: 2fr 1fr 1fr 1fr 0.5fr 4fr;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
-    "estante1 estante2"
-    "estante3 estante3"
-    "estante4 estante4"
-    "estante5 estante5"
-    "estante6 estante6"
-    "estante7 estante7";
+        "estante1 estante2"
+        "estante3 estante3"
+        "estante4 estante4"
+        "estante5 estante5"
+        "estante6 estante6"
+        "estante7 estante7";
     }
     .estanteria4 h4{
         text-align: center;
@@ -101,3 +101,23 @@ h4{
         text-align: center;
     }
 }
+@media(max-width: 180px){
+    .heladera{
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr 0.5fr 4fr;
+        grid-template-areas: 
+        "estante1 estante1"
+        "estante2 estante2"
+        "estante3 estante3"
+        "estante4 estante4"
+        "estante5 estante5"
+        "estante6 estante6"
+        "estante7 estante7";
+    }
+    .estanteria1 h3{
+        text-align: center;
+    }
+    .estanteria2 h3{
+        text-align: center;
+    }
+}
+
