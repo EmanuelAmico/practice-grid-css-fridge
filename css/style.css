@@ -29,38 +29,46 @@ h4{
     background-color:rgb(217,217,217);
     border: 0.8rem solid rgb(190, 87, 205);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 2fr 3fr 0.5fr 4fr;
     gap: 0.4rem;
+    grid-template-areas: 
+    "estante1 estante1 estante1 estante2 estante2 estante2"
+    "estante3 estante3 estante4 estante4 estante5 estante5"
+    "estante6 estante6 estante6 estante6 estante6 estante6"
+    "estante7 estante7 estante7 estante7 estante7 estante7";
 }
 .estanteria1,.estanteria2,.estanteria3,.estanteria4,.estanteria5,.estanteria6,.estanteria7{
     background-color:rgb(204,204,204);
 }
 .estanteria1{
+    grid-area: estante1;
     display: flex;
     align-items: flex-end;
 }
 .estanteria2{
+    grid-area: estante2;
 }
 .estanteria2 h3{
     text-align: end;
 }
 .estanteria3{
+    grid-area: estante3;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .estanteria4{
-    
+    grid-area: estante4;
 }
 .estanteria5{
-    
+    grid-area: estante5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .estanteria6{
-    
+    grid-area: estante6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,8 +77,47 @@ h4{
     text-align: center;
 }
 .estanteria7{
-    
+    grid-area: estante7;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+@media(max-width: 425px){
+    .heladera{
+        grid-template-rows: 2fr 1fr 1fr 1fr 0.5fr 4fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "estante1 estante2"
+        "estante3 estante3"
+        "estante4 estante4"
+        "estante5 estante5"
+        "estante6 estante6"
+        "estante7 estante7";
+    }
+    .estanteria4 h4{
+        text-align: center;
+    }
+    .estanteria5 h4{
+        text-align: center;
+    }
+}
+@media(max-width: 180px){
+    .heladera{
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr 0.5fr 4fr;
+        grid-template-areas: 
+        "estante1 estante1"
+        "estante2 estante2"
+        "estante3 estante3"
+        "estante4 estante4"
+        "estante5 estante5"
+        "estante6 estante6"
+        "estante7 estante7";
+    }
+    .estanteria1 h3{
+        text-align: center;
+    }
+    .estanteria2 h3{
+        text-align: center;
+    }
+}
+
